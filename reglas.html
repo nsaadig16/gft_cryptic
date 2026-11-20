@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reglas · GFT-Críptico</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🟨%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Caveat+Brush&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="page">
+  <header>
+    <div class="hero-note"><h1 id="titulo">GFT-Críptico</h1></div>
+    <nav class="nav" aria-label="Secciones">
+      <a href="index.html">Pista y clasificación</a>
+      <a href="reglas.html" aria-current="page">Reglas</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ✏️ Las reglas son HTML normal: puedes editar el texto directamente aquí. -->
+    <section class="guide" aria-labelledby="h-guide">
+      <h2 id="h-guide">Reglas del mini críptico</h2>
+      <p>Cada acertijo es una pista críptica en castellano: una frase que parece normal, pero que esconde dos cosas a la vez, la definición de la respuesta y un pequeño juego con las letras.</p>
+
+      <h3>Cómo se puntúa</h3>
+      <ul class="plain">
+        <li>Escribe tu nombre y tu respuesta en un post-it y échalo en el bol.</li>
+        <li>Si aciertas ese día, sumas 1 punto. Si no, 0.</li>
+        <li>Nada de trampas: si se descubre que alguien ha usado IA para resolver la pista, resta 1 punto ese día, aunque su respuesta fuera correcta.</li>
+      </ul>
+
+      <h3>Anatomía de una pista</h3>
+      <p>Toda pista tiene una <strong>definición</strong> (lo que significa la respuesta, normalmente al principio o al final de la frase) y un <strong>juego de palabras</strong> (lo que te dice cómo construirla con letras). A menudo hay un <strong>indicador</strong>, una palabra que avisa de qué juego es: «revuelto», «dentro de», «al revés»…</p>
+
+      <h3>Tipos de juego</h3>
+      <ul class="types">
+        <li>
+          <strong>Selector</strong>
+          <span class="how">Coges letras concretas de unas palabras y las juntas.</span>
+          <span class="ind">cabeza de, cola de, primera de, final de</span>
+          <p class="ex">«Principio de mano y final de pelo: no es bueno.» → <b>MALO</b></p>
+        </li>
+        <li>
+          <strong>Anagrama</strong>
+          <span class="how">Reordenas las letras de una palabra para formar otra.</span>
+          <span class="ind">revuelto, desordenado, loco, mezclado</span>
+          <p class="ex">«Desordenado, arco es una piedra grande.» → <b>ROCA</b></p>
+        </li>
+        <li>
+          <strong>Palabra escondida</strong>
+          <span class="how">La respuesta está dentro de una o varias palabras seguidas.</span>
+          <span class="ind">en, dentro de, parte de</span>
+          <p class="ex">«El rey de la selva se esconde en sale ondas.» → <b>LEÓN</b></p>
+        </li>
+        <li>
+          <strong>Reverso</strong>
+          <span class="how">Lees una palabra de derecha a izquierda.</span>
+          <span class="ind">al revés, sube, retorna</span>
+          <p class="ex">«Al revés, amar es parte del árbol.» → <b>RAMA</b></p>
+        </li>
+        <li>
+          <strong>Contenedor</strong>
+          <span class="how">Una palabra se mete dentro de otra.</span>
+          <span class="ind">abraza, rodea, contiene</span>
+          <p class="ex">«Mueble donde comes: es dentro de ma.» → <b>MESA</b></p>
+        </li>
+        <li>
+          <strong>Sustracción</strong>
+          <span class="how">Quitas letras a una palabra (el principio, el final…).</span>
+          <span class="ind">sin cabeza, sin fin, casi</span>
+          <p class="ex">«Mala sin cabeza: se mueve para volar.» → <b>ALA</b></p>
+        </li>
+        <li>
+          <strong>Onomatopeya</strong>
+          <span class="how">La respuesta suena igual que otra palabra.</span>
+          <span class="ind">se oye, suena, en la radio</span>
+          <p class="ex">«Suena a tubo, pero es del verbo tener.» → <b>TUVO</b></p>
+        </li>
+        <li>
+          <strong>Doble definición</strong>
+          <span class="how">Dos definiciones distintas de la misma palabra, sin juego de letras.</span>
+          <span class="ind">no suele haber indicador</span>
+          <p class="ex">«Donde te sientas y donde guardas el dinero.» → <b>BANCO</b></p>
+        </li>
+        <li>
+          <strong>Misceláneas</strong>
+          <span class="how">Se usan números romanos, símbolos químicos, cifras…</span>
+          <span class="ind">romanos, químico, cardinal</span>
+          <p class="ex">Por ejemplo: C vale 100 y Fe es el hierro.</p>
+        </li>
+      </ul>
+
+      <h3>Letras y enumeración</h3>
+      <ul class="plain">
+        <li>El número entre paréntesis indica la longitud: (8) es una palabra de ocho letras, (3,4) son dos palabras, de tres y de cuatro.</li>
+        <li>La respuesta puede llevar Ñ y tildes. Al comprobar, una vocal con tilde cuenta igual que sin ella.</li>
+        <li>La Ñ y la N son letras distintas.</li>
+      </ul>
+
+      <p class="source">Guía completa, con más ejemplos y tutorial: <a href="https://minicriptico.com/guia">minicriptico.com/guia</a></p>
+    </section>
+  </main>
+</div>
+
+<script src="data.js"></script>
+<script>
+  document.getElementById("titulo").textContent = CONFIG.titulo;
+  document.title = "Reglas · " + CONFIG.titulo;
+</script>
+</body>
+</html>
